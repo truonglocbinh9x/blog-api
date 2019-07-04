@@ -17,14 +17,17 @@ gem 'jbuilder', '~> 2.5'
 gem 'kaminari'
 gem 'fast_jsonapi'
 gem 'rack-cors', :require => 'rack/cors'
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
 
 group :development, :test do
   gem 'byebug', platform: :mri
 end
 
 group :development do
+	gem 'capistrano'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
+  gem 'capistrano3-puma',   require: false
   gem 'faker'
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'

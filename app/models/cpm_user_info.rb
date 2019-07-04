@@ -1,0 +1,2 @@
+class CpmUserInfo < ApplicationRecord
+end
