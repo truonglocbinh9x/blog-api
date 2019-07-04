@@ -16,6 +16,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'kaminari'
 gem 'fast_jsonapi'
+gem 'faker'
 gem 'rack-cors', :require => 'rack/cors'
 
 group :development, :test do
@@ -28,7 +29,6 @@ group :development do
   gem 'capistrano-rails'
   gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
   gem 'capistrano3-puma',   require: false
-  gem 'faker'
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
